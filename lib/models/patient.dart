@@ -8,7 +8,7 @@ class Patient {
     required this.id,
     required this.name,
     required this.email,
-    required this.phone,
+    required this.phone, required String photoUrl,
   });
 
   factory Patient.fromMap(Map<String, dynamic> data, String id) {
@@ -16,7 +16,7 @@ class Patient {
       id: id,
       name: data['name'] ?? '',
       email: data['email'] ?? '',
-      phone: data['phone'] ?? '',
+      phone: data['phone'] ?? '', photoUrl: '',
     );
   }
 
