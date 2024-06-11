@@ -20,6 +20,8 @@ class Patient {
     );
   }
 
+  String? get photoUrl => null;
+
   Map<String, dynamic> toMap() {
     return {
       'name': name,

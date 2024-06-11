@@ -26,4 +26,6 @@ class PatientProvider with ChangeNotifier {
   Future<void> deletePatient(String id) async {
     await _firestoreService.deletePatient(id);
   }
+
+  void removePatient(String id) {}
 }

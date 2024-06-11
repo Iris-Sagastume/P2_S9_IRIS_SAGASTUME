@@ -39,7 +39,7 @@ class _AppointmentScreenState extends State<AppointmentScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Add Appointment'),
+        title: const Text('Agregar cita'),
         actions: [
           IconButton(
             onPressed: () {
@@ -72,7 +72,7 @@ class _AppointmentScreenState extends State<AppointmentScreen> {
                   context: context,
                   builder: (BuildContext context) {
                     return AlertDialog(
-                      title: const Text('Add Appointment'),
+                      title: const Text('Agregar Cita'),
                       content: Form(
                         key: _formKey,
                         child: SingleChildScrollView(
@@ -193,20 +193,20 @@ class _AppointmentScreenState extends State<AppointmentScreen> {
                               Navigator.pop(context);
                             }
                           },
-                          child: const Text('Save'),
+                          child: const Text('Guardar'),
                         ),
                         ElevatedButton(
                           onPressed: () {
                             Navigator.pop(context);
                           },
-                          child: const Text('Cancel'),
+                          child: const Text('Cancelar'),
                         ),
                       ],
                     );
                   },
                 );
               },
-              child: const Text('Add Appointment'),
+              child: const Text('Agregar cita'),
             ),
             Expanded(
               child: ListView.builder(
@@ -226,14 +226,14 @@ class _AppointmentScreenState extends State<AppointmentScreen> {
                               context: context,
                               builder: (BuildContext context) {
                                 return AlertDialog(
-                                  title: const Text('Edit Appointment'),
+                                  title: const Text('Editar cita'),
                                   content: const Text('Update appointment functionality goes here'),
                                   actions: [
                                     ElevatedButton(
                                       onPressed: () {
                                         Navigator.pop(context);
                                       },
-                                      child: const Text('Cancel'),
+                                      child: const Text('Cancelar'),
                                     ),
                                   ],
                                 );
@@ -248,7 +248,7 @@ class _AppointmentScreenState extends State<AppointmentScreen> {
                               context: context,
                               builder: (BuildContext context) {
                                 return AlertDialog(
-                                  title: const Text('Delete Appointment'),
+                                  title: const Text('Elimar cita'),
                                   content: const Text('Are you sure you want to delete this appointment?'),
                                   actions: [
                                     ElevatedButton(
@@ -256,13 +256,13 @@ class _AppointmentScreenState extends State<AppointmentScreen> {
                                         appointmentProvider.deleteAppointment(appointment.id);
                                         Navigator.pop(context);
                                       },
-                                      child: const Text('Delete'),
+                                      child: const Text('Eliminar'),
                                     ),
                                     ElevatedButton(
                                       onPressed: () {
                                         Navigator.pop(context);
                                       },
-                                      child: const Text('Cancel'),
+                                      child: const Text('Cancelar'),
                                     ),
                                   ],
                                 );

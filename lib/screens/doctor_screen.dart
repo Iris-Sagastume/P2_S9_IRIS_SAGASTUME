@@ -25,7 +25,7 @@ class _DoctorScreenState extends State<DoctorScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Doctors'),
+        title: const Text('Doctor'),
       ),
       body: Column(
         children: [
@@ -106,20 +106,20 @@ class _DoctorScreenState extends State<DoctorScreen> {
                             Navigator.pop(context);
                           }
                         },
-                        child: const Text('Save'),
+                        child: const Text('Guardar'),
                       ),
                       ElevatedButton(
                         onPressed: () {
                           Navigator.pop(context);
                         },
-                        child: const Text('Cancel'),
+                        child: const Text('Cancelar'),
                       ),
                     ],
                   );
                 },
               );
             },
-            child: const Text('Add Doctor'),
+            child: const Text('Agregar Doctor'),
           ),
           Expanded(
             child: ListView.builder(
@@ -139,7 +139,7 @@ class _DoctorScreenState extends State<DoctorScreen> {
                             context: context,
                             builder: (BuildContext context) {
                               return AlertDialog(
-                                title: const Text('Edit Doctor'),
+                                title: const Text('Editar Doctor'),
                                 content: Form(
                                   key: _formKey,
                                   child: SingleChildScrollView(
@@ -213,13 +213,13 @@ class _DoctorScreenState extends State<DoctorScreen> {
                                         Navigator.pop(context);
                                       }
                                     },
-                                    child: const Text('Update'),
+                                    child: const Text('Actualizar'),
                                   ),
                                   ElevatedButton(
                                     onPressed: () {
                                       Navigator.pop(context);
                                     },
-                                    child: const Text('Cancel'),
+                                    child: const Text('Cancelar'),
                                   ),
                                 ],
                               );
@@ -234,7 +234,7 @@ class _DoctorScreenState extends State<DoctorScreen> {
                             context: context,
                             builder: (BuildContext context) {
                               return AlertDialog(
-                                title: const Text('Delete Doctor'),
+                                title: const Text('Eliminar Doctor'),
                                 content: Text('Are you sure you want to delete ${doctor.name}?'),
                                 actions: [
                                   ElevatedButton(
@@ -242,13 +242,13 @@ class _DoctorScreenState extends State<DoctorScreen> {
                                       doctorProvider.deleteDoctor(doctor.id);
                                       Navigator.pop(context);
                                     },
-                                    child: const Text('Delete'),
+                                    child: const Text('Eliminar'),
                                   ),
                                   ElevatedButton(
                                     onPressed: () {
                                       Navigator.pop(context);
                                     },
-                                    child: const Text('Cancel'),
+                                    child: const Text('Cancelar'),
                                   ),
                                 ],
                               );
