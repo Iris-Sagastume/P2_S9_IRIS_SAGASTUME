@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "907854656760",
+    "project_id": "p2-iris-sagastume",
+    "storage_bucket": "p2-iris-sagastume.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907854656760:android:1e7a021c21b7cd9562370d",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5RWNHnEFOT5RJ2MJbZlRJzSMC4ARHPAI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
